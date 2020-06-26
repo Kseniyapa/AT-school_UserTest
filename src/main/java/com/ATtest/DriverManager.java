@@ -21,7 +21,7 @@ public class DriverManager {
     public static WebDriver webDriver() {
         if (driver != null)
             return driver;
-        InputStream inputStream = DriverManager.class.getClassLoader().getResourceAsStream("config.properties");
+        InputStream inputStream = DriverManager.class.getClassLoader().getResourceAsStream("conf.properties");
         Properties properties = new Properties();
         try {
             properties.load(inputStream);
